@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32-S3 Smart Controller PCB | Alchemy Solutions</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/>
+            <circle cx="14" cy="14" r="3" fill="#00D4FF"/>
+          </svg>
+        </div>
+        <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+      </a>
+      <a href="../index.html#portfolio" class="btn btn-ghost btn-sm">← Back to Portfolio</a>
+    </div>
+  </nav>
+
+  <div class="project-page">
+    <div class="container">
+
+      <div class="project-header">
+        <span class="section-tag">PCB Design</span>
+        <h1>ESP32-S3 Smart Controller PCB</h1>
+        <p class="project-intro">A fully custom, production-ready PCB designed from scratch for smart home and industrial automation applications. Built around the ESP32-S3 module with dual relay outputs, onboard power supply, and multiple interface options.</p>
+        <div class="project-meta">
+          <div class="meta-item"><strong>Category</strong><span>PCB Design</span></div>
+          <div class="meta-item"><strong>Platform</strong><span>ESP32-S3</span></div>
+          <div class="meta-item"><strong>Tool</strong><span>KiCad</span></div>
+          <div class="meta-item"><strong>Status</strong><span class="status-done">Completed</span></div>
+        </div>
+      </div>
+
+      <div class="project-image-main">
+        <img src="../assets/img/pcb-esp32s3.png" alt="ESP32-S3 PCB Design" />
+      </div>
+
+      <div class="project-content">
+        <div class="project-body">
+          <h2>Project Overview</h2>
+          <p>This project involved designing a complete custom PCB for a smart controller application. The board integrates the ESP32-S3 module — providing both Wi-Fi and Bluetooth 5.0 (BLE) connectivity — with all the peripheral circuits needed for a production-ready IoT device.</p>
+          <p>The design went through schematic capture, PCB layout, design rule checks, and final Gerber file generation ready for PCB manufacturing. All components were selected for availability, cost-effectiveness, and long-term supply chain stability.</p>
+
+          <h2>Key Features</h2>
+          <ul class="project-list">
+            <li>ESP32-S3 module with Wi-Fi 802.11 b/g/n and Bluetooth 5.0 LE</li>
+            <li>Dual relay outputs for high-power load switching</li>
+            <li>Onboard buck converter power supply (accepts 7–30V DC input)</li>
+            <li>LCD/OLED display interface via I2C and SPI headers</li>
+            <li>Screw terminal connectors for field wiring</li>
+            <li>USB Type-C programming and power interface</li>
+            <li>LED status indicators and user button</li>
+            <li>Mounting holes for standard enclosures</li>
+          </ul>
+
+          <h2>Design Process</h2>
+          <p>The design started with a requirements definition phase — identifying input voltage range, load switching requirements, communication interfaces, and enclosure constraints. From there, a full schematic was drawn in KiCad, followed by component selection, footprint assignment, and PCB layout.</p>
+          <p>Particular attention was given to power plane separation, decoupling capacitor placement near the ESP32 module, and routing the RF antenna area away from noisy switching circuits to ensure reliable wireless performance.</p>
+        </div>
+
+        <div class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Tech Stack</h4>
+            <div class="sidebar-tags">
+              <span>ESP32-S3</span><span>KiCad</span><span>Wi-Fi</span><span>BLE 5.0</span>
+              <span>Relay Control</span><span>Buck Converter</span><span>I2C</span><span>SPI</span>
+              <span>USB-C</span><span>Gerber Files</span>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h4>Deliverables</h4>
+            <ul class="deliverable-list">
+              <li>✓ Full KiCad schematic</li>
+              <li>✓ PCB layout files</li>
+              <li>✓ Gerber files (manufacturing-ready)</li>
+              <li>✓ Bill of Materials (BOM)</li>
+              <li>✓ 3D render of the board</li>
+            </ul>
+          </div>
+          <a href="../index.html#contact" class="btn btn-primary btn-full">Start a Similar Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark"><svg width="22" height="22" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div>
+          <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Alchemy Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Touchless Smart Dustbin | Alchemy Solutions</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div>
+        <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+      </a>
+      <a href="../index.html#portfolio" class="btn btn-ghost btn-sm">← Back to Portfolio</a>
+    </div>
+  </nav>
+  <div class="project-page">
+    <div class="container">
+      <div class="project-header">
+        <span class="section-tag">IoT + Automation</span>
+        <h1>Touchless Smart Dustbin</h1>
+        <p class="project-intro">An Arduino-powered automatic dustbin that opens its lid the moment a hand or object is detected nearby — fully contactless, hygienic, and ideal for hospitals, kitchens, and public spaces.</p>
+        <div class="project-meta">
+          <div class="meta-item"><strong>Platform</strong><span>Arduino UNO</span></div>
+          <div class="meta-item"><strong>Sensors</strong><span>HC-SR04 + PIR</span></div>
+          <div class="meta-item"><strong>Actuator</strong><span>Servo Motor</span></div>
+          <div class="meta-item"><strong>Status</strong><span class="status-done">Completed</span></div>
+        </div>
+      </div>
+      <div class="project-image-main">
+        <img src="../assets/img/smart-dustbin.png" alt="Smart Dustbin Circuit" />
+      </div>
+      <div class="project-content">
+        <div class="project-body">
+          <h2>Project Overview</h2>
+          <p>The touchless smart dustbin uses two complementary sensors — an HC-SR04 ultrasonic distance sensor and a PIR passive infrared motion sensor — to reliably detect when someone approaches. When detected, a servo motor automatically opens the lid, holds it open while the person is present, then closes it after a configurable delay.</p>
+          <p>The dual-sensor approach reduces false triggers: the PIR detects gross motion, while the ultrasonic sensor confirms close proximity, ensuring the lid only opens when someone is actually about to use it.</p>
+          <h2>Key Features</h2>
+          <ul class="project-list">
+            <li>Contactless operation — no buttons, no touch required</li>
+            <li>Dual-sensor fusion: PIR + ultrasonic for reliable detection</li>
+            <li>Servo-driven lid with smooth open/close motion</li>
+            <li>Configurable detection range and hold-open timer</li>
+            <li>LED status indicator (open / closed / full warning)</li>
+            <li>Battery or USB powered — flexible deployment</li>
+          </ul>
+          <h2>Sensor Fusion Logic</h2>
+          <p>The firmware implements a simple state machine: IDLE → DETECTED → OPEN → CLOSING. The PIR sensor wakes the system from low-power idle. The ultrasonic sensor then confirms the object is within the configured threshold (default: 30cm). If confirmed, the servo drives the lid open. The lid stays open as long as either sensor reports presence. After both sensors clear and the hold timer expires, the lid closes and the system returns to IDLE.</p>
+        </div>
+        <div class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Tech Stack</h4>
+            <div class="sidebar-tags">
+              <span>Arduino UNO</span><span>HC-SR04</span><span>PIR Sensor</span>
+              <span>Servo Motor</span><span>Embedded C</span><span>State Machine</span><span>Automation</span>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h4>Deliverables</h4>
+            <ul class="deliverable-list">
+              <li>✓ Arduino firmware source code</li>
+              <li>✓ Full circuit schematic</li>
+              <li>✓ Component list and wiring guide</li>
+              <li>✓ Configurable parameters documented</li>
+            </ul>
+          </div>
+          <a href="../index.html#contact" class="btn btn-primary btn-full">Start a Similar Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><div class="logo"><div class="logo-mark"><svg width="22" height="22" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div><span class="logo-text">Alchemy<span class="accent"> Solutions</span></span></div></div><p class="footer-copy">© 2026 Alchemy Solutions. All rights reserved.</p></div></footer>
+</body>
+</html>

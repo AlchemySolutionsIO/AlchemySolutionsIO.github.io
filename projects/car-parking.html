@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32 Smart Car Parking System | Alchemy Solutions</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div>
+        <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+      </a>
+      <a href="../index.html#portfolio" class="btn btn-ghost btn-sm">← Back to Portfolio</a>
+    </div>
+  </nav>
+  <div class="project-page">
+    <div class="container">
+      <div class="project-header">
+        <span class="section-tag">Firmware + Embedded</span>
+        <h1>ESP32 Smart Car Parking System</h1>
+        <p class="project-intro">An embedded system that uses ultrasonic sensing to detect vehicle presence in parking slots and communicates slot availability in real time through a traffic-light LED indicator — no human management required.</p>
+        <div class="project-meta">
+          <div class="meta-item"><strong>Platform</strong><span>ESP32</span></div>
+          <div class="meta-item"><strong>Sensor</strong><span>HC-SR04 Ultrasonic</span></div>
+          <div class="meta-item"><strong>Language</strong><span>Embedded C</span></div>
+          <div class="meta-item"><strong>Status</strong><span class="status-done">Completed</span></div>
+        </div>
+      </div>
+      <div class="project-image-main">
+        <img src="../assets/img/car-parking.png" alt="ESP32 Smart Car Parking System" />
+      </div>
+      <div class="project-content">
+        <div class="project-body">
+          <h2>Project Overview</h2>
+          <p>This smart parking system eliminates the need for parking attendants by automatically detecting whether a parking slot is occupied or free. The ESP32 microcontroller reads distance data from an HC-SR04 ultrasonic sensor and maps it to a three-state traffic light output — green (free), yellow (entering/leaving), and red (occupied).</p>
+          <p>The system can be scaled to monitor multiple slots simultaneously and can be extended with Wi-Fi reporting to a central dashboard for larger parking facilities.</p>
+          <h2>Key Features</h2>
+          <ul class="project-list">
+            <li>HC-SR04 ultrasonic sensor with ±3mm distance accuracy</li>
+            <li>Three-state LED indicator: Green / Yellow / Red</li>
+            <li>Debounced state transitions to avoid false triggers</li>
+            <li>Configurable detection threshold distance</li>
+            <li>Wi-Fi capability ready for network expansion</li>
+            <li>Low power consumption — suitable for battery-backed deployments</li>
+          </ul>
+          <h2>Firmware Design</h2>
+          <p>The firmware is written in bare-metal Embedded C for the ESP32. The main loop polls the ultrasonic sensor at 10Hz, applies a moving average filter to reduce noise, and compares the result against configurable near/far thresholds to determine slot state. A hysteresis band around each threshold prevents flickering between states.</p>
+        </div>
+        <div class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Tech Stack</h4>
+            <div class="sidebar-tags">
+              <span>ESP32</span><span>HC-SR04</span><span>Embedded C</span><span>GPIO</span>
+              <span>Ultrasonic Sensing</span><span>Firmware</span><span>Wi-Fi</span>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h4>Deliverables</h4>
+            <ul class="deliverable-list">
+              <li>✓ ESP32 firmware source code</li>
+              <li>✓ Circuit schematic</li>
+              <li>✓ Configurable threshold settings</li>
+              <li>✓ Tested and documented</li>
+            </ul>
+          </div>
+          <a href="../index.html#contact" class="btn btn-primary btn-full">Start a Similar Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><div class="logo"><div class="logo-mark"><svg width="22" height="22" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div><span class="logo-text">Alchemy<span class="accent"> Solutions</span></span></div></div><p class="footer-copy">© 2026 Alchemy Solutions. All rights reserved.</p></div></footer>
+</body>
+</html>

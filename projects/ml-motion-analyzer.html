@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ML Motion Analyzer App | Alchemy Solutions</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div>
+        <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+      </a>
+      <a href="../index.html#portfolio" class="btn btn-ghost btn-sm">← Back to Portfolio</a>
+    </div>
+  </nav>
+  <div class="project-page">
+    <div class="container">
+      <div class="project-header">
+        <span class="section-tag">Mobile App + BLE + Machine Learning</span>
+        <h1>ML-Powered Motion Analyzer App</h1>
+        <p class="project-intro">An Android application that pairs with an IMU sensor over Bluetooth Low Energy to capture, classify, and analyse motion patterns using an on-device machine learning model — delivering real-time performance feedback.</p>
+        <div class="project-meta">
+          <div class="meta-item"><strong>Platform</strong><span>Android</span></div>
+          <div class="meta-item"><strong>Connectivity</strong><span>BLE 5.0</span></div>
+          <div class="meta-item"><strong>Sensor</strong><span>IMU (Accelerometer + Gyro)</span></div>
+          <div class="meta-item"><strong>Status</strong><span class="status-done">Completed</span></div>
+        </div>
+      </div>
+      <div class="project-image-main">
+        <img src="../assets/img/ml-imu-app.png" alt="ML IMU Android App" />
+      </div>
+      <div class="project-content">
+        <div class="project-body">
+          <h2>Project Overview</h2>
+          <p>This project combines embedded hardware, Bluetooth communication, and mobile machine learning into a single product. An IMU sensor (accelerometer + gyroscope) is mounted on the user. The Android app connects to it via BLE, streams motion data, and runs an on-device ML model to classify the motion pattern in real time.</p>
+          <p>The application was built for sports performance analysis — specifically swing analysis — giving athletes instant, objective feedback without any cloud dependency.</p>
+          <h2>Key Features</h2>
+          <ul class="project-list">
+            <li>BLE 5.0 device scanning, pairing, and data streaming</li>
+            <li>Real-time 6-axis IMU data (accelerometer + gyroscope)</li>
+            <li>On-device TensorFlow Lite ML model for motion classification</li>
+            <li>Live motion visualization and performance scoring</li>
+            <li>Session history and replay</li>
+            <li>Clean Material Design UI with smooth animations</li>
+          </ul>
+          <h2>Technical Approach</h2>
+          <p>The IMU firmware runs on a compact BLE-enabled microcontroller, sampling at 100Hz and transmitting data packets to the Android app. The Kotlin-based app uses Android's BLE GATT API for communication, buffers the incoming data into fixed-length windows, and feeds them into a TensorFlow Lite model for classification.</p>
+          <p>The ML model was trained on labelled motion data and exported to TFLite format for efficient on-device inference — no internet required, no latency from cloud calls.</p>
+        </div>
+        <div class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Tech Stack</h4>
+            <div class="sidebar-tags">
+              <span>Android</span><span>Kotlin</span><span>BLE GATT</span><span>IMU</span>
+              <span>TensorFlow Lite</span><span>Machine Learning</span><span>Accelerometer</span><span>Gyroscope</span>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h4>Deliverables</h4>
+            <ul class="deliverable-list">
+              <li>✓ Android app source code (Kotlin)</li>
+              <li>✓ BLE firmware for IMU sensor</li>
+              <li>✓ Trained TFLite ML model</li>
+              <li>✓ APK build ready for deployment</li>
+            </ul>
+          </div>
+          <a href="../index.html#contact" class="btn btn-primary btn-full">Start a Similar Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><div class="logo"><div class="logo-mark"><svg width="22" height="22" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div><span class="logo-text">Alchemy<span class="accent"> Solutions</span></span></div></div><p class="footer-copy">© 2026 Alchemy Solutions. All rights reserved.</p></div></footer>
+</body>
+</html>

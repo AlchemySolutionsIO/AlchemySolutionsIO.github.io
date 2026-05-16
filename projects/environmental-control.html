@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT Environmental Control System | Alchemy Solutions</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div>
+        <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+      </a>
+      <a href="../index.html#portfolio" class="btn btn-ghost btn-sm">← Back to Portfolio</a>
+    </div>
+  </nav>
+  <div class="project-page">
+    <div class="container">
+      <div class="project-header">
+        <span class="section-tag">Full IoT Product</span>
+        <h1>IoT Environmental Control System</h1>
+        <p class="project-intro">A complete end-to-end IoT system that monitors environmental conditions in real time and automates heating, cooling, and lighting through a web-based dashboard accessible from any browser.</p>
+        <div class="project-meta">
+          <div class="meta-item"><strong>Category</strong><span>Full IoT Product</span></div>
+          <div class="meta-item"><strong>Platform</strong><span>Arduino + Web</span></div>
+          <div class="meta-item"><strong>Connectivity</strong><span>Wi-Fi / MQTT</span></div>
+          <div class="meta-item"><strong>Status</strong><span class="status-done">Completed</span></div>
+        </div>
+      </div>
+      <div class="project-image-main">
+        <img src="../assets/img/web-control.png" alt="IoT Environmental Control Dashboard" />
+      </div>
+      <div class="project-content">
+        <div class="project-body">
+          <h2>Project Overview</h2>
+          <p>This project delivers a full IoT environmental monitoring and control solution. A microcontroller reads temperature and humidity from a DHT22 sensor and publishes readings over Wi-Fi. A custom web dashboard displays live data and lets the user set thresholds, schedule automation, and control outputs manually.</p>
+          <p>The system is designed for greenhouses, server rooms, offices, or any environment where temperature and humidity need to stay within precise limits.</p>
+          <h2>Key Features</h2>
+          <ul class="project-list">
+            <li>Live temperature and humidity readings updated in real time</li>
+            <li>24-hour automated scheduling for heater and lighting</li>
+            <li>Manual override for all relay outputs</li>
+            <li>Setpoint configuration for automatic threshold control</li>
+            <li>Responsive web dashboard accessible from any device</li>
+            <li>RTC module for accurate time-based scheduling without internet</li>
+            <li>OLED local display for on-site readings</li>
+          </ul>
+          <h2>How It Works</h2>
+          <p>The Arduino reads sensor data every 5 seconds and pushes it to the web dashboard via a lightweight HTTP server or MQTT broker. The dashboard — built with HTML, CSS, and JavaScript — renders live charts and control panels. When temperature or humidity exceeds the configured setpoint, the corresponding relay automatically activates the heater, fan, or humidifier.</p>
+        </div>
+        <div class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Tech Stack</h4>
+            <div class="sidebar-tags">
+              <span>Arduino</span><span>DHT22</span><span>RTC DS1307</span><span>Wi-Fi</span>
+              <span>MQTT</span><span>Web Dashboard</span><span>Relay Control</span><span>OLED</span>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h4>Deliverables</h4>
+            <ul class="deliverable-list">
+              <li>✓ Full Arduino firmware source code</li>
+              <li>✓ Web dashboard (HTML/CSS/JS)</li>
+              <li>✓ Wiring schematic</li>
+              <li>✓ Setup and user documentation</li>
+            </ul>
+          </div>
+          <a href="../index.html#contact" class="btn btn-primary btn-full">Start a Similar Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><div class="logo"><div class="logo-mark"><svg width="22" height="22" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div><span class="logo-text">Alchemy<span class="accent"> Solutions</span></span></div></div><p class="footer-copy">© 2026 Alchemy Solutions. All rights reserved.</p></div></footer>
+</body>
+</html>
