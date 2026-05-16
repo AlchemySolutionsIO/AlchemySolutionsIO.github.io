@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alchemy Solutions — End-to-end embedded systems and IoT product development. PCB design, firmware, and mobile apps shipped worldwide." />
+  <title>Alchemy Solutions | Embedded Systems & IoT Engineering</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/>
+            <polygon points="14,7 21,11 21,17 14,21 7,17 7,11" fill="#00D4FF" opacity="0.2"/>
+            <circle cx="14" cy="14" r="3" fill="#00D4FF"/>
+          </svg>
+        </div>
+        <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Tech Stack</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="btn btn-nav">Get a Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-grid-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for new projects
+      </div>
+      <h1 class="hero-title">
+        Turning Ideas Into<br />
+        <span class="gradient-text">Intelligent Products</span>
+      </h1>
+      <p class="hero-sub">
+        We design the hardware, write the firmware, and ship the app —<br class="desktop-br" />
+        you get a <strong>complete, market-ready IoT product.</strong>
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          <span>Start Your Project</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#portfolio" class="btn btn-ghost">View Our Work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Global Clients</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES — BENTO GRID -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">End-to-End Product Development</h2>
+        <p class="section-sub">From the first schematic to the final app on the App Store — one partner, the entire stack.</p>
+      </div>
+      <div class="bento-grid">
+
+        <!-- FEATURED: Full IoT Product -->
+        <div class="bento-card bento-featured reveal">
+          <div class="bento-glow"></div>
+          <div class="bento-badge">Most Popular</div>
+          <div class="bento-icon">🌐</div>
+          <h3>Full IoT Product</h3>
+          <p>Complete end-to-end delivery — PCB design, embedded firmware, cloud backend, and mobile app. One partner for the entire product lifecycle.</p>
+          <div class="bento-tags">
+            <span>Hardware</span><span>Firmware</span><span>Cloud</span><span>iOS & Android</span>
+          </div>
+          <div class="bento-cta">
+            <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+          </div>
+        </div>
+
+        <!-- PCB Design -->
+        <div class="bento-card reveal">
+          <div class="bento-icon">🔲</div>
+          <h3>PCB Design & Schematics</h3>
+          <p>Custom PCB layout and schematic capture. Manufacturing-ready Gerber files, BOM, and assembly drawings.</p>
+          <div class="bento-tags">
+            <span>KiCad</span><span>Altium</span><span>Gerber</span>
+          </div>
+        </div>
+
+        <!-- Firmware -->
+        <div class="bento-card reveal">
+          <div class="bento-icon">⚙️</div>
+          <h3>Embedded Firmware</h3>
+          <p>Bare-metal and RTOS firmware in C/C++ for STM32, ESP32, Arduino, PIC, AVR and more.</p>
+          <div class="bento-tags">
+            <span>STM32</span><span>ESP32</span><span>FreeRTOS</span>
+          </div>
+        </div>
+
+        <!-- Mobile Apps -->
+        <div class="bento-card reveal">
+          <div class="bento-icon">📱</div>
+          <h3>Mobile Applications</h3>
+          <p>Android and iOS apps that communicate with your hardware via BLE, Wi-Fi, or MQTT.</p>
+          <div class="bento-tags">
+            <span>Android</span><span>iOS</span><span>BLE</span>
+          </div>
+        </div>
+
+        <!-- Prototyping -->
+        <div class="bento-card reveal">
+          <div class="bento-icon">🔌</div>
+          <h3>Hardware Prototyping</h3>
+          <p>Rapid bring-up of custom hardware from breadboard proof-of-concept to PCB prototype.</p>
+          <div class="bento-tags">
+            <span>Prototyping</span><span>Testing</span><span>Debug</span>
+          </div>
+        </div>
+
+        <!-- Wireless -->
+        <div class="bento-card reveal">
+          <div class="bento-icon">📡</div>
+          <h3>Wireless & Connectivity</h3>
+          <p>Wi-Fi, BLE, LoRa, Zigbee, and cellular integration. Get your device talking to the world reliably.</p>
+          <div class="bento-tags">
+            <span>LoRa</span><span>BLE</span><span>4G/LTE</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section section-dark" id="stack">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tools & Technologies</span>
+        <h2 class="section-title">Our Tech Stack</h2>
+        <p class="section-sub">The tools we use every day to ship production-ready embedded products.</p>
+      </div>
+      <div class="stack-categories">
+
+        <div class="stack-group reveal">
+          <h4 class="stack-group-title">Microcontrollers</h4>
+          <div class="stack-items">
+            <div class="stack-item">STM32</div>
+            <div class="stack-item">ESP32</div>
+            <div class="stack-item">ESP8266</div>
+            <div class="stack-item">Arduino</div>
+            <div class="stack-item">PIC</div>
+            <div class="stack-item">AVR</div>
+            <div class="stack-item">nRF52</div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h4 class="stack-group-title">PCB & Hardware</h4>
+          <div class="stack-items">
+            <div class="stack-item">KiCad</div>
+            <div class="stack-item">Altium</div>
+            <div class="stack-item">EasyEDA</div>
+            <div class="stack-item">LTspice</div>
+            <div class="stack-item">Proteus</div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h4 class="stack-group-title">Firmware & OS</h4>
+          <div class="stack-items">
+            <div class="stack-item">FreeRTOS</div>
+            <div class="stack-item">Zephyr</div>
+            <div class="stack-item">Bare-Metal C</div>
+            <div class="stack-item">C++</div>
+            <div class="stack-item">MicroPython</div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h4 class="stack-group-title">Connectivity</h4>
+          <div class="stack-items">
+            <div class="stack-item">BLE 5.0</div>
+            <div class="stack-item">Wi-Fi</div>
+            <div class="stack-item">LoRa / LoRaWAN</div>
+            <div class="stack-item">MQTT</div>
+            <div class="stack-item">Zigbee</div>
+            <div class="stack-item">4G/LTE</div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h4 class="stack-group-title">Mobile</h4>
+          <div class="stack-items">
+            <div class="stack-item">Android (Kotlin)</div>
+            <div class="stack-item">iOS (Swift)</div>
+            <div class="stack-item">Flutter</div>
+            <div class="stack-item">React Native</div>
+          </div>
+        </div>
+
+        <div class="stack-group reveal">
+          <h4 class="stack-group-title">Cloud & Tools</h4>
+          <div class="stack-items">
+            <div class="stack-item">AWS IoT</div>
+            <div class="stack-item">Firebase</div>
+            <div class="stack-item">MQTT Broker</div>
+            <div class="stack-item">Git</div>
+            <div class="stack-item">VS Code</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-inner">
+      <div class="about-text reveal">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">We Think Like<br/><span class="gradient-text">Product Engineers</span></h2>
+        <p>Alchemy Solutions is a Pakistan-based embedded systems and IoT product development company serving clients worldwide. Founded by engineers who have shipped real products — not just written code.</p>
+        <p>We don't just build what you ask for. We ask the right questions, understand your market, and engineer a product that your users will love.</p>
+        <div class="about-points">
+          <div class="about-point">
+            <div class="point-check">✓</div>
+            <span>End-to-end delivery — no handoff problems between teams</span>
+          </div>
+          <div class="about-point">
+            <div class="point-check">✓</div>
+            <span>Hardware + firmware + app engineered under one roof</span>
+          </div>
+          <div class="about-point">
+            <div class="point-check">✓</div>
+            <span>University of Engineering & Technology, Taxila trained</span>
+          </div>
+          <div class="about-point">
+            <div class="point-check">✓</div>
+            <span>NDA-ready — your IP is fully protected</span>
+          </div>
+          <div class="about-point">
+            <div class="point-check">✓</div>
+            <span>Transparent communication and milestone-based delivery</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Work With Us</a>
+      </div>
+      <div class="about-cards reveal">
+        <div class="glass-card">
+          <div class="glass-icon">🏆</div>
+          <strong>5+ Years</strong>
+          <span>In Embedded Systems</span>
+        </div>
+        <div class="glass-card">
+          <div class="glass-icon">🌍</div>
+          <strong>Global Clients</strong>
+          <span>US, UK, EU & Beyond</span>
+        </div>
+        <div class="glass-card">
+          <div class="glass-icon">⚡</div>
+          <strong>Fast Delivery</strong>
+          <span>Agile, Milestone-Based</span>
+        </div>
+        <div class="glass-card">
+          <div class="glass-icon">🔒</div>
+          <strong>NDA Ready</strong>
+          <span>Your IP is Protected</span>
+        </div>
+        <div class="glass-card card-wide">
+          <div class="glass-icon">📍</div>
+          <div>
+            <strong>Based in Pakistan</strong>
+            <span>Islamabad — Serving Clients Worldwide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section section-dark" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Projects We've Shipped</h2>
+        <p class="section-sub">A selection of embedded systems and IoT products built for clients worldwide.</p>
+      </div>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img placeholder-img">
+            <div class="placeholder-content">
+              <span class="placeholder-icon">🔲</span>
+              <span>PCB Photo</span>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <span class="portfolio-tag">PCB Design + Firmware</span>
+            <h3>Industrial Sensor Node</h3>
+            <p>STM32-based wireless sensor node with LoRa connectivity for remote industrial monitoring. Ultra-low-power design — 2-year battery life on 2x AA cells.</p>
+            <div class="portfolio-stack">
+              <span>STM32</span><span>LoRa</span><span>KiCad</span><span>FreeRTOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img placeholder-img">
+            <div class="placeholder-content">
+              <span class="placeholder-icon">📱</span>
+              <span>App Screenshot</span>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <span class="portfolio-tag">Full IoT Product</span>
+            <h3>Smart Home Controller</h3>
+            <p>ESP32-based smart home hub with custom Android/iOS app. BLE + Wi-Fi dual mode, controls 32 zones with real-time feedback and scheduling.</p>
+            <div class="portfolio-stack">
+              <span>ESP32</span><span>BLE</span><span>Android</span><span>iOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img placeholder-img">
+            <div class="placeholder-content">
+              <span class="placeholder-icon">📡</span>
+              <span>Hardware Photo</span>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <span class="portfolio-tag">Firmware + Mobile App</span>
+            <h3>GPS Fleet Tracker</h3>
+            <p>Compact GPS tracker with 4G LTE modem, real-time position reporting via MQTT, and cross-platform mobile app for fleet management.</p>
+            <div class="portfolio-stack">
+              <span>GPS</span><span>4G LTE</span><span>MQTT</span><span>Flutter</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="portfolio-cta reveal">
+        <p>Have a project in mind? Let's build it.</p>
+        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How We Work</span>
+        <h2 class="section-title">Simple, Transparent Process</h2>
+      </div>
+      <div class="process-track">
+        <div class="process-line"></div>
+        <div class="process-step reveal">
+          <div class="step-circle">01</div>
+          <div class="step-content">
+            <h3>Discovery Call</h3>
+            <p>Free 30-minute consultation. We understand your requirements, constraints, timeline, and budget.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-circle">02</div>
+          <div class="step-content">
+            <h3>Proposal & Scope</h3>
+            <p>Detailed technical proposal with milestone breakdown, timeline, and a fixed-price quote.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-circle">03</div>
+          <div class="step-content">
+            <h3>Build & Iterate</h3>
+            <p>Regular updates, prototype reviews, and milestone deliveries. You're in the loop at every stage.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-circle">04</div>
+          <div class="step-content">
+            <h3>Deliver & Support</h3>
+            <p>Full source files, documentation, and post-delivery support. Your product, your IP — always.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Start Your Project Today</h2>
+        <p class="section-sub">Tell us about your project and we'll get back to you within 24 hours.</p>
+      </div>
+      <div class="contact-inner">
+        <form class="contact-form glass-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="john@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Project Type</label>
+            <select name="project_type">
+              <option value="">Select a service...</option>
+              <option>Full IoT Product (End-to-End)</option>
+              <option>PCB Design & Schematics</option>
+              <option>Embedded Firmware</option>
+              <option>Mobile Application (Android / iOS)</option>
+              <option>Hardware Prototyping</option>
+              <option>Wireless & Connectivity</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell Us About Your Project</label>
+            <textarea name="message" rows="5" placeholder="Describe your project, requirements, and timeline..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+
+        <div class="contact-details reveal">
+          <h3>Direct Contact</h3>
+          <div class="contact-item">
+            <div class="contact-icon-wrap">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:contact.alchemysolutions@gmail.com">contact.alchemysolutions@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap">💼</div>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://linkedin.com/company/alchemysolutionstech" target="_blank">Alchemy Solutions</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap">📍</div>
+            <div>
+              <strong>Location</strong>
+              <span>Islamabad, Pakistan — Clients Worldwide</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap">⏱️</div>
+            <div>
+              <strong>Response Time</strong>
+              <span>Within 24 hours</span>
+            </div>
+          </div>
+          <div class="also-find">
+            <p>Also available on</p>
+            <div class="platform-badges">
+              <a href="https://www.upwork.com/freelancers/tehsinudin" target="_blank" rel="noopener" class="platform-badge">
+                <span>Upwork</span>
+              </a>
+              <a href="https://www.freelancer.pk/u/TopRated209" target="_blank" rel="noopener" class="platform-badge">
+                <span>Freelancer</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+              <polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/>
+              <circle cx="14" cy="14" r="3" fill="#00D4FF"/>
+            </svg>
+          </div>
+          <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+        </div>
+        <p>Turning Ideas Into Intelligent Products</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Alchemy Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
