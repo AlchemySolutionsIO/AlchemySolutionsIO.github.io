@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32-S3 Table-Call System Firmware | Alchemy Solutions</title>
+  <meta name="description" content="Production ESP32-S3 firmware for a commercial wireless table-call system: captive portal provisioning, offline queue, battery monitoring, and per-device authentication." />
+  <link rel="canonical" href="https://alchemysolutionstech.com/projects/table-call.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ESP32-S3 Table-Call System Firmware | Alchemy Solutions" />
+  <meta property="og:description" content="Production ESP32-S3 firmware for a commercial wireless table-call system: captive portal provisioning, offline queue, battery monitoring, and per-device authentication." />
+  <meta property="og:image" content="https://alchemysolutionstech.com/assets/img/table-call.webp" />
+  <meta property="og:url" content="https://alchemysolutionstech.com/projects/table-call.html" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%230D1B2A'/%3E%3Cpolygon points='14,4 24,9.5 24,18.5 14,24 4,18.5 4,9.5' stroke='%2300D4FF' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='14' cy='14' r='3' fill='%2300D4FF'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="../assets/css/project.css?v=3" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/>
+            <circle cx="14" cy="14" r="3" fill="#00D4FF"/>
+          </svg>
+        </div>
+        <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+      </a>
+      <a href="../index.html#portfolio" class="btn btn-ghost btn-sm">← Back to Portfolio</a>
+    </div>
+  </nav>
+
+  <div class="project-page">
+    <div class="container">
+
+      <div class="project-header">
+        <span class="section-tag">Commercial Client Work</span>
+        <h1>ESP32-S3 Table-Call System Firmware</h1>
+        <p class="project-intro">Production firmware for a commercial wireless table-call product, built for a client in Colombia. Battery-powered call buttons communicate reliably with a central receiver — with the provisioning, security, and failure-recovery features a real deployment demands.</p>
+        <div class="project-meta">
+          <div class="meta-item"><strong>Category</strong><span>Commercial Firmware</span></div>
+          <div class="meta-item"><strong>Platform</strong><span>ESP32-S3</span></div>
+          <div class="meta-item"><strong>Client</strong><span>🇨🇴 Colombia (via Upwork)</span></div>
+          <div class="meta-item"><strong>Status</strong><span class="status-done">Delivered on Schedule</span></div>
+        </div>
+      </div>
+
+      <div class="project-image-main">
+        <img src="../assets/img/table-call.webp" alt="ESP32-S3 table-call firmware development prototype" width="1200" height="900" />
+      </div>
+
+      <div class="project-content">
+        <div class="project-body">
+          <h2>Project Overview</h2>
+          <p>The client was building a table-call product — wireless buttons that guests or staff press to call service, with events delivered instantly to a central point. They needed firmware that would survive the real world: unreliable Wi-Fi, drained batteries, power cuts, and devices that must be set up by non-technical users.</p>
+          <p>We delivered a complete ESP32-S3 firmware stack with a clean, modular manager-class architecture — every subsystem (connectivity, queueing, power, security) isolated and testable, so the codebase can grow with the product.</p>
+
+          <h2>What We Built</h2>
+          <ul class="project-list">
+            <li><strong>Captive portal provisioning</strong> — end users configure Wi-Fi from any phone, no app or technical knowledge needed</li>
+            <li><strong>Offline queue</strong> — call events are stored and delivered once connectivity returns; nothing is lost during outages</li>
+            <li><strong>Battery monitoring</strong> — real-time charge reporting so dead buttons never surprise the operator</li>
+            <li><strong>Per-device authentication</strong> — each unit carries its own credentials; devices can't be spoofed or cloned</li>
+            <li><strong>Reboot recovery</strong> — devices restore full state automatically after power loss</li>
+            <li><strong>Thorough documentation</strong> — the firmware is fully reproducible by the client's own team, with no lock-in to us</li>
+          </ul>
+
+          <h2>Outcome</h2>
+          <p>Delivered on schedule, covering the full agreed scope. The client highlighted the clean separation of concerns in the architecture and the documentation quality — and invited us to collaborate on future work.</p>
+
+          <blockquote class="client-review">
+            <div class="tc-stars">★★★★★</div>
+            <p>"Tehsin delivered solid ESP32-S3 firmware for our IoT product on schedule. Code is clean and modular, with well-thought-out separation of concerns across the manager classes. He covered the full scope including captive portal provisioning, offline queue, battery monitoring, per-device auth, and reboot recovery. Documentation is thorough which makes the firmware reproducible without him. Professional communication. Recommended for IoT firmware work and would collaborate again."</p>
+            <footer>— Diomar Elias G., Colombia · verified Upwork review</footer>
+          </blockquote>
+        </div>
+
+        <div class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Tech Stack</h4>
+            <div class="sidebar-tags">
+              <span>ESP32-S3</span><span>C++</span><span>Wi-Fi</span><span>Captive Portal</span>
+              <span>Offline Queue</span><span>Battery Management</span><span>Device Auth</span>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h4>Deliverables</h4>
+            <ul class="deliverable-list">
+              <li>✓ Production firmware source</li>
+              <li>✓ Modular manager-class architecture</li>
+              <li>✓ Provisioning &amp; security subsystems</li>
+              <li>✓ Full technical documentation</li>
+              <li>✓ Post-delivery support</li>
+            </ul>
+          </div>
+          <a href="../index.html#contact" class="btn btn-primary btn-full">Start a Similar Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark"><svg width="22" height="22" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div>
+          <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Alchemy Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+  <script data-goatcounter="https://alchemysolution.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

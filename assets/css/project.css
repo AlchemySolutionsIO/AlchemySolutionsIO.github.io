@@ -200,3 +200,36 @@
   .project-meta { width: 100%; }
   .meta-item { flex: 1; min-width: 120px; }
 }
+
+/* ---- VIDEO DEMOS ---- */
+.project-image-main video {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  background: #000;
+}
+
+/* ---- CLIENT REVIEW QUOTE ---- */
+.client-review {
+  margin: 28px 0 0;
+  padding: 24px 26px;
+  border-left: 3px solid #00d4ff;
+  border-radius: 0 14px 14px 0;
+  background: rgba(0, 212, 255, 0.05);
+}
+.client-review .tc-stars {
+  color: #ffc542;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.client-review p {
+  font-style: italic;
+  opacity: 0.92;
+  margin-bottom: 12px;
+}
+.client-review footer {
+  font-size: 0.88rem;
+  color: #00d4ff;
+  font-weight: 600;
+}
