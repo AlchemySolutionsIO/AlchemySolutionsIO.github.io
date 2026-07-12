@@ -983,3 +983,31 @@ a.badge-link:hover {
 .footer-nav-external a {
   color: #00d4ff;
 }
+
+/* ---- PROMINENT PLATFORM BADGES ---- */
+.platform-badge-big {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 26px;
+  border: 1px solid rgba(0, 212, 255, 0.35);
+  border-radius: 14px;
+  background: rgba(0, 212, 255, 0.06);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.platform-badge-big strong {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.platform-badge-big .platform-rating {
+  color: #00d4ff;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.platform-badge-big:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 212, 255, 0.7);
+  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.18);
+}
