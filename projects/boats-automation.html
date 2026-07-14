@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marine Automation Prototype | Alchemy Solutions</title>
-  <meta name="description" content="Working marine automation prototype: synchronized linear actuator control with Arduino and relay switching — watch the live video demo." />
+  <title>Jet-Boat Deflector &amp; Throttle Control System | Alchemy Solutions</title>
+  <meta name="description" content="Joystick-driven deflector and throttle control system for a jet boat: dual actuator control, custom calibration curves, and servo-coupled engine speed — with live video demo." />
   <link rel="canonical" href="https://alchemysolutionstech.com/projects/boats-automation.html" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Marine Automation Prototype | Alchemy Solutions" />
-  <meta property="og:description" content="Working marine automation prototype: synchronized linear actuator control with Arduino and relay switching — watch the live video demo." />
+  <meta property="og:title" content="Jet-Boat Deflector &amp; Throttle Control System | Alchemy Solutions" />
+  <meta property="og:description" content="Joystick-driven deflector and throttle control system for a jet boat: dual actuator control, custom calibration curves, and servo-coupled engine speed — with live video demo." />
   <meta property="og:image" content="https://alchemysolutionstech.com/assets/img/boats-automation.webp" />
   <meta property="og:url" content="https://alchemysolutionstech.com/projects/boats-automation.html" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%230D1B2A'/%3E%3Cpolygon points='14,4 24,9.5 24,18.5 14,24 4,18.5 4,9.5' stroke='%2300D4FF' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='14' cy='14' r='3' fill='%2300D4FF'/%3E%3C/svg%3E" />
@@ -36,14 +36,14 @@
     <div class="container">
 
       <div class="project-header">
-        <span class="section-tag">Hardware Automation · Video Demo</span>
-        <h1>Marine Automation Prototype</h1>
-        <p class="project-intro">A working automation prototype for marine applications: heavy-duty linear actuators driven through a relay bank by an Arduino Mega, with synchronized motion control. Watch it run in the video below.</p>
+        <span class="section-tag">Commercial Client Work · Marine · Video Demo</span>
+        <h1>Jet-Boat Deflector &amp; Throttle Control System</h1>
+        <p class="project-intro">A joystick-driven control system for a jet boat, built for a repeat client: independent port and starboard deflector control through heavy-duty linear actuators, custom calibration curves, and servo-coupled engine throttle. Watch the actuator prototype running below.</p>
         <div class="project-meta">
-          <div class="meta-item"><strong>Category</strong><span>Automation Prototype</span></div>
+          <div class="meta-item"><strong>Category</strong><span>Marine Control Systems</span></div>
           <div class="meta-item"><strong>Platform</strong><span>Arduino Mega</span></div>
-          <div class="meta-item"><strong>Actuation</strong><span>Dual Linear Actuators</span></div>
-          <div class="meta-item"><strong>Status</strong><span class="status-done">Prototype Demonstrated</span></div>
+          <div class="meta-item"><strong>Client</strong><span>Repeat Client · Marine</span></div>
+          <div class="meta-item"><strong>Status</strong><span class="status-done">Delivered · Ongoing Collaboration</span></div>
         </div>
       </div>
 
@@ -57,36 +57,37 @@
       <div class="project-content">
         <div class="project-body">
           <h2>Project Overview</h2>
-          <p>Boats still rely heavily on manual mechanical operation. This prototype demonstrates how on-board mechanisms can be automated with electric linear actuators and an embedded controller — bringing push-button operation to hardware that traditionally needs muscle.</p>
-          <p>The system drives two heavy-duty linear actuators through a relay switching bank, controlled by an Arduino Mega. The control logic manages extension, retraction, and synchronized movement of both actuators, with the switching architecture sized for real actuator loads rather than bench toys.</p>
+          <p>On a jet boat, the deflectors are the steering and the reverse — they redirect the jet's thrust, and how precisely they respond decides how the boat handles. Our client needed the port and starboard deflector controllers re-engineered: joystick inputs mapped to actuator movement through custom calibration curves, so full-ahead to full-astern happens in exactly the travel the helmsman expects.</p>
+          <p>The system reads joystick positions on a 0–255 scale with a 128 center point, drives each deflector's heavy-duty linear actuator through a relay power stage, and constrains deflector motion to a calibrated band. Beyond the deflector limits, each side's servo-driven throttle takes over — pushing the control further increases engine revs, giving smooth, single-hand control of direction and power together.</p>
 
-          <h2>What the Demo Shows</h2>
+          <h2>What We Built</h2>
           <ul class="project-list">
-            <li>Dual heavy-duty linear actuators under embedded control</li>
-            <li>Relay-bank power switching, isolated from the controller logic</li>
-            <li>Synchronized extend / retract motion sequences</li>
-            <li>Complete working prototype — not a simulation</li>
+            <li><strong>Independent port &amp; starboard deflector control</strong> — each side driven by its own actuator and control channel</li>
+            <li><strong>Custom calibration curves</strong> — joystick travel remapped so the full maneuvering range sits exactly where the operator wants it</li>
+            <li><strong>Servo-coupled engine throttle</strong> — per-side engine speed control that engages progressively beyond deflector limits</li>
+            <li><strong>High-load relay switching</strong> — actuator currents kept isolated from the controller logic</li>
+            <li><strong>Iterative delivery with the client</strong> — calibration refined across multiple rounds of on-boat feedback</li>
           </ul>
 
           <h2>From Prototype to Product</h2>
-          <p>This is exactly how we approach product development: prove the mechanism with a working prototype first, then harden it — custom PCB to replace the breadboards, marine-grade enclosures and wiring, and wireless control from a helm panel or phone app. If you're building automation for marine or any harsh environment, this is a conversation worth having.</p>
+          <p>The video shows the actuator control prototype in bench testing before deployment. This is how we approach control systems for harsh environments: prove the behavior on the bench, calibrate it with the client in the real installation, and keep iterating — this client has come back to us repeatedly to extend the system.</p>
         </div>
 
         <div class="project-sidebar">
           <div class="sidebar-card">
             <h4>Tech Stack</h4>
             <div class="sidebar-tags">
-              <span>Arduino Mega</span><span>Linear Actuators</span><span>Relay Switching</span>
-              <span>Motion Control</span><span>Embedded C/C++</span>
+              <span>Arduino Mega</span><span>Joystick Control</span><span>Linear Actuators</span>
+              <span>Servo Throttle</span><span>Relay Switching</span><span>Calibration Curves</span><span>Embedded C/C++</span>
             </div>
           </div>
           <div class="sidebar-card">
             <h4>Highlights</h4>
             <ul class="deliverable-list">
-              <li>✓ Working hardware prototype</li>
-              <li>✓ High-load actuator switching</li>
-              <li>✓ Synchronized motion logic</li>
-              <li>✓ Live video demonstration</li>
+              <li>✓ Deflector control firmware</li>
+              <li>✓ Custom joystick calibration</li>
+              <li>✓ Servo throttle integration</li>
+              <li>✓ Repeat-client collaboration</li>
             </ul>
           </div>
           <a href="../index.html#contact" class="btn btn-primary btn-full">Start a Similar Project</a>
