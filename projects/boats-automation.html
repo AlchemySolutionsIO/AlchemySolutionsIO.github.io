@@ -38,7 +38,7 @@
       <div class="project-header">
         <span class="section-tag">Commercial Client Work · Marine · Video Demo</span>
         <h1>Jet-Boat Deflector &amp; Throttle Control System</h1>
-        <p class="project-intro">A joystick-driven control system for a jet boat, built for a repeat client: independent port and starboard deflector control through heavy-duty linear actuators, custom calibration curves, and servo-coupled engine throttle. Watch the actuator prototype running below.</p>
+        <p class="project-intro">Converting a classic jet boat from mechanical linkages to a digital drive-by-wire helm: four control stations, closed-loop actuator control of steering nozzles and thrust deflectors, and servo-coupled engine throttle — built and refined across multiple phases with a repeat client. Watch the actuator prototype running below.</p>
         <div class="project-meta">
           <div class="meta-item"><strong>Category</strong><span>Marine Control Systems</span></div>
           <div class="meta-item"><strong>Platform</strong><span>Arduino Mega</span></div>
@@ -57,16 +57,17 @@
       <div class="project-content">
         <div class="project-body">
           <h2>Project Overview</h2>
-          <p>On a jet boat, the deflectors are the steering and the reverse — they redirect the jet's thrust, and how precisely they respond decides how the boat handles. Our client needed the port and starboard deflector controllers re-engineered: joystick inputs mapped to actuator movement through custom calibration curves, so full-ahead to full-astern happens in exactly the travel the helmsman expects.</p>
-          <p>The system reads joystick positions on a 0–255 scale with a 128 center point, drives each deflector's heavy-duty linear actuator through a relay power stage, and constrains deflector motion to a calibrated band. Beyond the deflector limits, each side's servo-driven throttle takes over — pushing the control further increases engine revs, giving smooth, single-hand control of direction and power together.</p>
+          <p>Classic jet boats are controlled through purely mechanical linkages — cables and levers connecting the helm to the steering nozzles and thrust deflectors. Our client is converting his vessel from analog to a full digital control system, and we've engineered that conversion across multiple project phases.</p>
+          <p>The system digitizes the helm: control levers are read electronically, and steering nozzles and port/starboard deflectors are positioned by actuators with <strong>closed-loop feedback</strong> — potentiometers on every nozzle and deflector confirm the real position, so the electronics know where the hardware actually is, not just where it was told to go. Control inputs run on a 0–255 scale with a 128 center point, remapped through calibration curves stored in EEPROM, and servo-driven engine throttle engages progressively beyond the deflector limits — direction and power on one control.</p>
 
           <h2>What We Built</h2>
           <ul class="project-list">
-            <li><strong>Independent port &amp; starboard deflector control</strong> — each side driven by its own actuator and control channel</li>
-            <li><strong>Custom calibration curves</strong> — joystick travel remapped so the full maneuvering range sits exactly where the operator wants it</li>
-            <li><strong>Servo-coupled engine throttle</strong> — per-side engine speed control that engages progressively beyond deflector limits</li>
-            <li><strong>High-load relay switching</strong> — actuator currents kept isolated from the controller logic</li>
-            <li><strong>Iterative delivery with the client</strong> — calibration refined across multiple rounds of on-boat feedback</li>
+            <li><strong>Analog-to-digital helm conversion</strong> — mechanical lever control replaced with electronic drive-by-wire</li>
+            <li><strong>Four control stations</strong> — a main helm plus three remote stations, each with steering and deflector controls, with station arbitration logic</li>
+            <li><strong>Closed-loop position control</strong> — feedback potentiometers on both steering nozzles and both deflectors</li>
+            <li><strong>Field calibration stored in EEPROM</strong> — the operator's preferred control ranges survive power cycles</li>
+            <li><strong>Servo-coupled engine throttle</strong> — per-side engine speed engages progressively beyond deflector travel</li>
+            <li><strong>OLED + LCD status displays</strong> — live position and calibration feedback at the helm</li>
           </ul>
 
           <h2>From Prototype to Product</h2>
@@ -77,8 +78,9 @@
           <div class="sidebar-card">
             <h4>Tech Stack</h4>
             <div class="sidebar-tags">
-              <span>Arduino Mega</span><span>Joystick Control</span><span>Linear Actuators</span>
-              <span>Servo Throttle</span><span>Relay Switching</span><span>Calibration Curves</span><span>Embedded C/C++</span>
+              <span>Arduino Mega</span><span>Drive-by-Wire</span><span>Closed-Loop Control</span>
+              <span>Multi-Station Helm</span><span>Linear Actuators</span><span>Servo Throttle</span>
+              <span>EEPROM Calibration</span><span>Embedded C/C++</span>
             </div>
           </div>
           <div class="sidebar-card">

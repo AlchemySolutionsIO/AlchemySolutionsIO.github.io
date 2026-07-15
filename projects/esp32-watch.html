@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32-S3 Wi-Fi Smartwatch | Alchemy Solutions</title>
+  <meta name="description" content="Custom ESP32-S3 smartwatch firmware across multiple hardware generations: analog and digital watch faces, audio player, photo display, REST API, and web configuration — a multi-year client collaboration." />
+  <link rel="canonical" href="https://alchemysolutionstech.com/projects/esp32-watch.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ESP32-S3 Wi-Fi Smartwatch | Alchemy Solutions" />
+  <meta property="og:description" content="Custom ESP32-S3 smartwatch firmware across multiple hardware generations: analog and digital watch faces, audio player, photo display, REST API, and web configuration — a multi-year client collaboration." />
+  <meta property="og:image" content="https://alchemysolutionstech.com/assets/img/esp32-watch.webp" />
+  <meta property="og:url" content="https://alchemysolutionstech.com/projects/esp32-watch.html" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' rx='6' fill='%230D1B2A'/%3E%3Cpolygon points='14,4 24,9.5 24,18.5 14,24 4,18.5 4,9.5' stroke='%2300D4FF' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='14' cy='14' r='3' fill='%2300D4FF'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="../assets/css/project.css?v=3" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/>
+            <circle cx="14" cy="14" r="3" fill="#00D4FF"/>
+          </svg>
+        </div>
+        <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+      </a>
+      <a href="../index.html#portfolio" class="btn btn-ghost btn-sm">← Back to Portfolio</a>
+    </div>
+  </nav>
+
+  <div class="project-page">
+    <div class="container">
+
+      <div class="project-header">
+        <span class="section-tag">Commercial Client Work · Multi-Year Engagement</span>
+        <h1>ESP32-S3 Wi-Fi Smartwatch Platform</h1>
+        <p class="project-intro">Complete custom smartwatch firmware for a US client — analog and digital watch faces, audio playback, photo display, countdown timers, and full Wi-Fi remote control — evolved across four hardware generations in an ongoing collaboration that began in 2023.</p>
+        <div class="project-meta">
+          <div class="meta-item"><strong>Category</strong><span>Wearable Firmware</span></div>
+          <div class="meta-item"><strong>Platform</strong><span>ESP32-S3</span></div>
+          <div class="meta-item"><strong>Client</strong><span>🇺🇸 United States (via Upwork)</span></div>
+          <div class="meta-item"><strong>Status</strong><span class="status-done">In Active Development</span></div>
+        </div>
+      </div>
+
+      <div class="project-image-main">
+        <img src="../assets/img/esp32-watch.webp" alt="ESP32-S3 smartwatch showing analog watch face with battery level, countdown timer, date, and network address" width="1200" height="1458" style="max-width:560px;margin:0 auto;display:block;" />
+      </div>
+
+      <div class="project-content">
+        <div class="project-body">
+          <h2>Project Overview</h2>
+          <p>What started as firmware for a single Wi-Fi-controlled watch has grown into a smartwatch platform spanning four display generations — from a 1.69&quot; touch LCD through 1.75&quot; and 2.06&quot; AMOLED rounds to a 3.5&quot; panel — with one firmware architecture carried and adapted across all of them.</p>
+          <p>The watch renders analog and digital faces with live battery state, countdown timers, and network status; plays audio through a dedicated driver; displays user photos; and is fully controllable over Wi-Fi — a built-in web page and REST API handle photo uploads, clock sync, and settings from any browser, with no app required.</p>
+
+          <h2>Engineering Highlights</h2>
+          <ul class="project-list">
+            <li><strong>Four hardware generations, one architecture</strong> — display, touch, power, and RTC drivers isolated so each new board is a port, not a rewrite</li>
+            <li><strong>Wi-Fi remote control</strong> — embedded web UI + REST API for photo upload, RTC sync, and power settings</li>
+            <li><strong>Audio playback</strong> — custom audio driver for music playback on the wearable</li>
+            <li><strong>Memory-smart photo rendering</strong> — JPEGs decoded block-by-block straight to the display, using ~512 bytes instead of a 134&nbsp;KB framebuffer</li>
+            <li><strong>Real power management</strong> — AXP2101 PMIC integration, battery gauging, sleep timeouts, and thermal-safe peripheral handling</li>
+            <li><strong>Professional documentation</strong> — full technical manual and setup guide, so the client can build and flash independently</li>
+          </ul>
+
+          <h2>Outcome</h2>
+          <p>The collaboration has continued for over two years and is still active — the strongest endorsement a client can give.</p>
+
+          <blockquote class="client-review">
+            <div class="tc-stars">★★★★★</div>
+            <p>"Tehsin is great to work with and is a very skilled engineer. I look forward to continuing to work with him in the future."</p>
+            <footer>— Thomas T., United States · verified Upwork review</footer>
+          </blockquote>
+        </div>
+
+        <div class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Tech Stack</h4>
+            <div class="sidebar-tags">
+              <span>ESP32-S3</span><span>AMOLED / LCD</span><span>Capacitive Touch</span>
+              <span>AXP2101 PMIC</span><span>RTC</span><span>Audio Driver</span>
+              <span>REST API</span><span>Async Web Server</span><span>C/C++</span>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <h4>Highlights</h4>
+            <ul class="deliverable-list">
+              <li>✓ 4 hardware generations supported</li>
+              <li>✓ Web UI + REST API control</li>
+              <li>✓ Audio player integration</li>
+              <li>✓ Technical manual authored</li>
+              <li>✓ 2+ years, still ongoing</li>
+            </ul>
+          </div>
+          <a href="../index.html#contact" class="btn btn-primary btn-full">Start a Similar Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark"><svg width="22" height="22" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" stroke="#00D4FF" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="#00D4FF"/></svg></div>
+          <span class="logo-text">Alchemy<span class="accent"> Solutions</span></span>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Alchemy Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+  <script data-goatcounter="https://alchemysolution.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
